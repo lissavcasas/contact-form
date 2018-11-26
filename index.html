@@ -10,14 +10,13 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <!--   CSS ANIMATE -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
-<!--   CSS STYLES-->
   <link rel="stylesheet" href="src/css/style.css" />
 </head>
 
 <body>
   <div class="container">
     <h1 class="brand"><span>Admin</span> Web Design </h1>
-    <div class="wrapper animated bounceInLeft">
+    <div class="wrapper animated bounceInLeft"> 
       <div class="company-info">
         <h3>Admin Web Design</h3>
         <ul>
@@ -28,36 +27,40 @@
       </div>
       <div class="contact">
         <h3>Email Us</h3>
-        <form>
+        <div class="alert"> Your message has been sent!</div>
+        <form id="contact">
           <p>
             <label>Name</label>
-            <input type="text" name="name">
+            <input type="text" id="name" name="name" required>
           </p>
           <p>
             <label>Company</label>
-            <input type="text" name="company">
+            <input type="text" id="company" name="company">
           </p>
           <p>
             <label>Email Address</label>
-            <input type="email" name="email">
+            <input type="email" id="email" name="email" required>
           </p>
           <p>
             <label>Phone Number</label>
-            <input type="text" name="phone">
+            <input type="text" id="phone" name="phone">
           </p>
           <p class="full">
             <label>Message</label>
-            <textarea name="message" rows="5"></textarea>
+            <textarea id="message" name="message" rows="5"></textarea>
           </p>
           <p class="full">
-            <button>Submit</button>
+            <button type="submit">Submit</button>
           </p>
         </form>
       </div>
     </div>
   </div>
-
+  <!-- FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-database.js"></script>
   <script src="src/js/index.js"></script>
+  <script src="src/js/firebase.js"></script>
 </body>
 
 </html>

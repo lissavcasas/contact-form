@@ -97,6 +97,15 @@ background: #f9feff;
 	transition: background-color 2s ease-out; /* slowing fading */
 }
 
+.alert {
+	text-align: center;
+	padding: 10px;
+	background: #79c879;
+	color: #fff;
+	margin-bottom: 10px;
+	display: none;
+}
+
 /* LARGE SCREENS */
 @media(min-width:700px){
 /* 	only if the screen es bigger than, it'd true */
